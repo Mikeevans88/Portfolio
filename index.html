@@ -9,14 +9,77 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>Projects</li>
-            <li>Resume</li>
-            <li>Contact Me</li>
-        </ul>
-    </nav>    
-
+    <nav class="navbar">
+        <img src="logo" class="logo">
+        <ul class="nav-links">
+            <li><a>About Me</a></li>
+            <li><a>Projects</a></li>
+            <li><a class="nav-button" href="#" alt="resume download"><buttton>Download Resume</buttton></a></li>
+            <li><a class="nav-button" href="#" alt="constact me"><buttton>Contact me</buttton></a></li>
+        </ul>       
+    </nav>
+    <section>
+        <div class="aboutme">
+            <h2>About Me Text Heading</h2>
+            <p>About me text</p>
+        </div>
+    </section> 
+    <section>
+        <div class="projectheading"> <h2>Projects</h2></div>
+        <div class="projects">
+        <div class="project">
+            <h3>Project 1</h3>
+            <img class="projectimage">
+            <p>Project description</p>
+            <a href="" >Github project link</a>
+            <a href="" >Link to project</a>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <img class="projectimage">
+            <p>Project description</p>
+            <a href="" >Github project link</a>
+            <a href="" >Link to project</a>
+        </div>
+        <div class="project">
+            <h3>Project 3</h3>
+            <img class="projectimage">
+            <p>Project description</p>
+            <a href="" >Github project link</a>
+            <a href="" >Link to project</a>
+        </div>
+        <div class="project">
+            <h3>Project 4</h3>
+            <img class="projectimage">
+            <p>Project description</p>
+            <a href="" >Github project link</a>
+            <a href="" >Link to project</a>
+        </div>
+    </div>
+    </section>
+    <section>
+        <div>
+            <h2>Resume</h2>
+            <p> Click the button bellow to download a copy of me resume</p>
+            <button>Download Resume</button>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2>Contact Me</h2>
+            <div>
+            <form class="contactform">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message</label>
+                <input type="textarea" id="message" name="message">
+                <button>Submit</button>
+            </form>
+            </div>
+        </div>
+    </section>
 
 <script src="app.js"></script>
 </body>
