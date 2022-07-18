@@ -19,29 +19,57 @@ section {
 
 .navbar {
 	display: flex;
-	justify-content: space-evenly;
+	font-size: 20px;
 	align-items: center;
 	color: black;
+	background-color: black;
 	width: 100%;
+	padding: 5px;
 	position: fixed;
+	box-shadow: 2px -3px 22px 1px black;
 }
 
 .navlinks {
 	list-style: none;
 	display: flex;
 	justify-content: flex-end;
+	padding-left: 10px;
 	width: 80%;
 	margin: auto;
 }
-.bio {
-	display: block;
-	justify-content: space-evenly;
-	background-color: black;
+
+.navlinks a {
+	text-decoration: none;
 	color: white;
-	margin: auto;
-	padding: 10vh;
-	font-size: 3vh;
+	margin: 10px;
 }
+
+.navlinks a:hover {
+	text-decoration: underline;
+	color: rgb(224, 158, 13);
+}
+
+.bio {
+	display: flex;
+	flex-direction: column;
+	justify-content: ;
+	align-items: center;
+	background-color: white;
+	background-image: url(https://images.unsplash.com/photo-1432821579285-1b649e5b1ce3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+	color: black;
+	margin-top: auto;
+	padding: 10vh;
+	font-size: 5vh;
+}
+img {
+	height: 60px;
+	width: 60px;
+}
+img:hover {
+	height: 100px;
+	width: 100px;
+}
+
 .projectspage {
 	display: block;
 	width: 100%;
@@ -66,7 +94,11 @@ section {
 	width: 50vh;
 	margin: 2vh;
 	background-color: white;
-	box-shadow: 4px 4px 4px 4px black;
+	box-shadow: 2px -3px 22px 1px black;
+}
+.project a img {
+	height: 20px;
+	width: 20px;
 }
 .resume {
 	display: block;
@@ -83,11 +115,32 @@ section {
 	background-color: cadetblue;
 }
 .contact {
-	display: block;
+	display: flex;
+	border: 1px solid white;
 	text-align: center;
-	padding: 10vh;
+	width: 100%;
+	padding-top: 10vh;
 	font-size: 3vh;
 	background-color: #ee9b00;
 }
 .contactform {
+	display: flex;
+	flex-direction: column;
+	width: 800px;
+	height: 80vh;
+	color: black;
+	background: white;
+	box-shadow: 2px -3px 22px 1px black;
+}
+
+.contactform input {
+	width: 60%;
+	margin: auto;
+	height: 30px;
+}
+
+.contactform textarea {
+	width: 60%;
+	margin: auto;
+	height: 200px;
 }

@@ -6,73 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Evans Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 
 <body>
     <nav class="navbar">
         <p>Michael Evans</p>
         <ul class="navlinks">
-            <li><a>About Me</a></li>
-            <li><a>Projects</a></li>
-            <li><a class="nav-button" href="#" alt="resume download"><buttton>Download Resume</buttton></a></li>
-            <li><a class="nav-button" href="#" alt="constact me"><buttton>Contact me</buttton></a></li>
+            <li><a href="#bio">About Me</a></li>
+            <li><a href="#projectspage">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact me</a></li>
         </ul>       
     </nav>
     <div class="container">
-        <section class="bio">
+        <section class="bio" id="bio">
             <div>
-                <h2>Hi, My name is Michael Evans.</h2>
-                <p>I am a front end web developer. Thank you for visiting my portfolio. What are we bulding?</p>
+                <h2>Hi,</h2>
+                <p> My name is Michael Evans and I am a front end web developer. Thank you for visiting my portfolio. What are we bulding?</p>
             </div>
-            <div><p>Languages</p>
-            <img src="programing languages pic">
+            <div class="skills"><p>skills</p>
+            </div>
+            <div>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" />
+          
+
+          
             </div>
         </section>
-        <section class="projectspage">
+        <section class="projectspage" id="projectspage">
             <div><h2>Projects</h2></div>
             <div class="project-container">
             <div class="project">
                 <h3>project title</h3>
                 <img src="https://images.unsplash.com/photo-1598398386929-4d5370672e9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=678&q=80">
                 <p> Description</p>
-                <a>Github link</a>
-                <a>project link</a>
+                <a>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                  </a>
+                <a>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" />
+                  </a>
             </div>
             <div class="project">
                 <h3>project title</h3>
                 <img src="https://images.unsplash.com/photo-1596382055505-a68cc3fd62e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=711&q=80">
                 <p> Description</p>
-                <a>Github link</a>
-                <a>project link</a>
+                <a>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                  </a>
+                <a>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" />
+                </a>
             </div>
             <div class="project">
                 <h3>project title</h3>
                 <img src="https://images.unsplash.com/photo-1597378609416-47cc937b294c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80">
                 <p> Description</p>
-                <a>Github link</a>
-                <a>project link</a>
+                <a>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                  </a>
+                <a>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" />
+                  </a>
             </div>
             </div>
         </section>
-        <section class="resume">
+        <section class="resume" id="resume">
             <h2>You Can download my resume by clicking..</h2>
             <button class="resume-button">Here</button>
         </section>
-        <section class="contact">
-            <h2>Contact Me</h2>
+        <section class="contact" id="contact">
             <div>
             <form class="contactform">
+                <h2>Contact Me</h2>
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email">
-                <label for="message" name="message"></label>
+                <label for="message" name="message">Message</label>
                 <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                <button>Submit</button>
+                <input type="submit" value="submit">
             </form>
             </div>
-        </section>
-
+        </section>        
 <script src="app.js"></script>
 </body>
 </html>
