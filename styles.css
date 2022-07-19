@@ -2,145 +2,147 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 section {
 	height: 100vh;
-	display: flex;
-	justify-content: center;
 	scroll-snap-align: start;
+	padding-top: 10rem;
 }
+
 .container {
 	scroll-snap-type: y mandatory;
 	overflow-y: scroll;
 	height: 100vh;
 }
 
-.navbar {
-	display: flex;
-	font-size: 20px;
-	align-items: center;
-	color: black;
-	background-color: black;
-	width: 100%;
-	padding: 5px;
+nav {
 	position: fixed;
-	box-shadow: 2px -3px 22px 1px black;
-}
-
-.navlinks {
-	list-style: none;
+	top: 0;
+	width: 100%;
 	display: flex;
-	justify-content: flex-end;
-	padding-left: 10px;
-	width: 80%;
-	margin: auto;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 5%;
+	background: #11243b;
+	color: white;
+}
+nav ul {
+	display: flex;
+	list-style: none;
+	justify-content: space-evenly;
 }
 
-.navlinks a {
+.nav-links li {
+	padding-left: 5rem;
+	padding-right: 1rem;
+	font-size: 1rem;
+}
+.nav-links a {
 	text-decoration: none;
 	color: white;
-	margin: 10px;
+}
+.logo {
+	font-family: 'Arizonia', cursive;
+	font-size: 2rem;
 }
 
-.navlinks a:hover {
-	text-decoration: underline;
-	color: rgb(224, 158, 13);
+.intro {
+	background: #11243b;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
+.intro-text {
+	color: white;
+	font-size: 3rem;
+}
+.slider {
+	background: #ffc105;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	transform: translateY(100%);
+}
+.hide {
+	background: #11243b;
+	overflow: hidden;
+}
+.hide span {
+	transform: translateY(100%);
+	display: inline-block;
+}
 .bio {
-	display: flex;
-	flex-direction: column;
-	justify-content: ;
-	align-items: center;
 	background-color: white;
-	background-image: url(https://images.unsplash.com/photo-1432821579285-1b649e5b1ce3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
-	color: black;
-	margin-top: auto;
-	padding: 10vh;
-	font-size: 5vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	font-size: 2rem;
 }
-img {
-	height: 60px;
-	width: 60px;
+.skills {
+	text-align: center;
+	margin-top: 10rem;
+	background-color: white;
 }
-img:hover {
-	height: 100px;
-	width: 100px;
+.skills img {
+	margin-top: 5rem;
+	height: 5rem;
+	width: 5rem;
+}
+.projectspage {
+	background-color: #11243b;
+}
+.card-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 1rem;
+}
+.card {
+	background: white;
+	padding: 1rem;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .4);
+	border-radius: .25rem;
+}
+.card-header {
+	font-size: 1.2rem;
+	margin-bottom: .5rem;
+}
+.card-body {
+	font-size: .9rem;
+}
+.card-footer {
+	margin-top: 1rem;
+}
+.btn {
+	--color: hsl(200, 50%, 50%);
+	background: var(--color);
+	color: white;
+	border: none;
+	padding: .7em .75em;
+	border-radius: .25em;
+	cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+	background: hsl(200, 50%, 60%);
 }
 
-.projectspage {
-	display: block;
-	width: 100%;
-	background-color: #0a9396;
-	text-align: center;
-	padding: 10vh;
-	font-size: 3vh;
-}
-.projectspage img {
-	height: 300px;
-	width: 250px;
-}
-.project-container {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	padding: 50px;
-	width: 100%;
-}
-.project {
-	height: 50vh;
-	width: 50vh;
-	margin: 2vh;
-	background-color: white;
-	box-shadow: 2px -3px 22px 1px black;
-}
-.project a img {
-	height: 20px;
-	width: 20px;
-}
 .resume {
-	display: block;
-	text-align: center;
-	background-color: #e9d8a6;
-	padding: 10vh;
-	font-size: 3vh;
-}
-.resume-button {
-	padding: 10px;
-	height: 50px;
-	font-size: 3vh;
-	color: black;
-	background-color: cadetblue;
+	background-color: #white;
 }
 .contact {
-	display: flex;
-	border: 1px solid white;
-	text-align: center;
-	width: 100%;
-	padding-top: 10vh;
-	font-size: 3vh;
-	background-color: #ee9b00;
-}
-.contactform {
-	display: flex;
-	flex-direction: column;
-	width: 800px;
-	height: 80vh;
-	color: black;
-	background: white;
-	box-shadow: 2px -3px 22px 1px black;
+	background-color: #11243b;
 }
 
-.contactform input {
-	width: 60%;
-	margin: auto;
-	height: 30px;
-}
-
-.contactform textarea {
-	width: 60%;
-	margin: auto;
-	height: 200px;
+img {
+	height: 1rem;
+	width: 1rem;
 }

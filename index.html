@@ -7,27 +7,35 @@
     <title>Michael Evans Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Lobster&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar">
-        <p>Michael Evans</p>
-        <ul class="navlinks">
-            <li><a href="#bio">About Me</a></li>
-            <li><a href="#projectspage">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact me</a></li>
+    <nav>
+        <h1 class="logo">Michael Evans</h1>
+        <ul class="nav-links">
+            <li><a data-page="bio" href="#">About</a></li>
+            <li><a data-page="projectspage" href="#">Projects</a></li>
+            <li><a data-page="resume" href="#">Resume</a></li>
+            <li><a data-page="contact"href="#">Contact</a></li>
+            <div class="highlight"></div>
         </ul>       
     </nav>
+
+    //Bio
+
     <div class="container">
         <section class="bio" id="bio">
             <div>
-                <h2>Hi,</h2>
-                <p> My name is Michael Evans and I am a front end web developer. Thank you for visiting my portfolio. What are we bulding?</p>
+                <h2>Hi, welcome to my personal portfolio</h2>
+                <p> My name is Michael Evans and I am a front end web developer. What are we bulding?</p>
             </div>
             <div class="skills"><p>skills</p>
-            </div>
-            <div>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
@@ -40,49 +48,63 @@
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" />
-          
+            </div>
 
-          
+            //intro
+
+            <div class="intro">
+                <div class="intro-text">
+                    <h1 class="hide">
+                        <span class="text">Creating inovation</span>
+                    </h1>
+                    <h1 class="hide">
+                        <span class="text">for everyday</span>
+                    </h1>
+                    <h1 class="hide">
+                        <span class="text">people</span>
+                    </h1>
+                </div>
             </div>
+            <div class="slider"></div>
         </section>
+
+        //project page
+
         <section class="projectspage" id="projectspage">
-            <div><h2>Projects</h2></div>
-            <div class="project-container">
-            <div class="project">
-                <h3>project title</h3>
-                <img src="https://images.unsplash.com/photo-1598398386929-4d5370672e9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=678&q=80">
-                <p> Description</p>
-                <a>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-                  </a>
-                <a>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" />
-                  </a>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-image"><img src="https://images.unsplash.com/photo-1596382055505-a68cc3fd62e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=711&q=80"></div>
+                    <div class="card-header">Project Title</div>
+                    <div class="card-body">Description</div>
+                    <div class="card-footer">
+                        <button class="btn">Github</button>
+                        <button class="btn">Live</button>
+                    </div>
+                </div>
+            <div class="card">
+                <div class="card-image"><img src="https://images.unsplash.com/photo-1596382055505-a68cc3fd62e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=711&q=80"></div>
+                <div class="card-header">Project Title</div>
+                <div class="card-body">Description</div>
+                <div class="card-footer">
+                    <button class="btn">Github</button>
+                    <button class="btn">Live</button>
+                </div>
             </div>
-            <div class="project">
-                <h3>project title</h3>
-                <img src="https://images.unsplash.com/photo-1596382055505-a68cc3fd62e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=711&q=80">
-                <p> Description</p>
-                <a>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-                  </a>
-                <a>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" />
-                </a>
+            <div class="card">
+                <div class="card-image"><img src="https://images.unsplash.com/photo-1596382055505-a68cc3fd62e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=711&q=80"></div>
+                <div class="card-header">Project Title</div>
+                <div class="card-body">Description</div>
+                <div class="card-footer">
+                    <button class="btn">Github</button>
+                    <button class="btn">Live</button>
+                </div>
             </div>
-            <div class="project">
-                <h3>project title</h3>
-                <img src="https://images.unsplash.com/photo-1597378609416-47cc937b294c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80">
-                <p> Description</p>
-                <a>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-                  </a>
-                <a>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" />
-                  </a>
-            </div>
-            </div>
+        </div>
         </section>
+
+
+        // resume page
+
         <section class="resume" id="resume">
             <h2>You Can download my resume by clicking..</h2>
             <button class="resume-button">Here</button>
@@ -100,7 +122,8 @@
                 <input type="submit" value="submit">
             </form>
             </div>
-        </section>        
+        </section>   
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>     
 <script src="app.js"></script>
 </body>
 </html>
