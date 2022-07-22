@@ -19,21 +19,21 @@
     <nav>
         <h1 class="logo">Michael Evans</h1>
         <ul class="nav-links">
-            <li><a data-page="bio" href="#">About</a></li>
-            <li><a data-page="projectspage" href="#">Projects</a></li>
-            <li><a data-page="resume" href="#">Resume</a></li>
-            <li><a data-page="contact"href="#">Contact</a></li>
-            <div class="highlight"></div>
+            <li><a href="#bio">About</a></li>
+            <li><a href="#projectspage">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>       
     </nav>
 
-    //Bio
 
     <div class="container">
         <section class="bio" id="bio">
             <div>
                 <h2>Hi, welcome to my personal portfolio</h2>
                 <p> My name is Michael Evans and I am a front end web developer. What are we bulding?</p>
+                <div><button>Download Resume</button>
+                    <button>Contact Me</button>
+                </div>
             </div>
             <div class="skills"><p>skills</p>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
@@ -43,14 +43,10 @@
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" />
             </div>
-
-            //intro
 
             <div class="intro">
                 <div class="intro-text">
@@ -68,30 +64,29 @@
             <div class="slider"></div>
         </section>
 
-        //project page
 
         <section class="projectspage" id="projectspage">
             <div class="card-grid">
                 <div class="card">
-                    <div class="card-image"><img src="https://images.unsplash.com/photo-1596382055505-a68cc3fd62e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=711&q=80"></div>
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80">
                     <div class="card-header">Project Title</div>
-                    <div class="card-body">Description</div>
+                    <div class="card-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia similique saepe corporis consequuntur qui deserunt atque enim. Impedit, expedita perferendis.</div>
                     <div class="card-footer">
                         <button class="btn">Github</button>
                         <button class="btn">Live</button>
                     </div>
                 </div>
             <div class="card">
-                <div class="card-image"><img src="https://images.unsplash.com/photo-1596382055505-a68cc3fd62e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=711&q=80"></div>
+                <img src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
                 <div class="card-header">Project Title</div>
-                <div class="card-body">Description</div>
+                <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos earum, facere iusto, odio sunt fuga aliquid, nihil blanditiis ipsam dolores architecto dicta officiis ducimus velit. Quia atque praesentium veniam possimus sunt, quas beatae nihil labore? Mollitia reprehenderit, ad at vero omnis aliquam, blanditiis deleniti aspernatur quaerat eveniet quae eius error numquam ullam excepturi nihil eligendi laboriosam ipsa, unde nisi illo.</div>
                 <div class="card-footer">
                     <button class="btn">Github</button>
                     <button class="btn">Live</button>
                 </div>
             </div>
             <div class="card">
-                <div class="card-image"><img src="https://images.unsplash.com/photo-1596382055505-a68cc3fd62e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=711&q=80"></div>
+                <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1036&q=80">
                 <div class="card-header">Project Title</div>
                 <div class="card-body">Description</div>
                 <div class="card-footer">
@@ -101,27 +96,29 @@
             </div>
         </div>
         </section>
-
-
-        // resume page
-
-        <section class="resume" id="resume">
-            <h2>You Can download my resume by clicking..</h2>
-            <button class="resume-button">Here</button>
-        </section>
         <section class="contact" id="contact">
+        <div class="contact-container">
             <div>
-            <form class="contactform">
                 <h2>Contact Me</h2>
+                <p>Thank you for taking the time to view my portfolio. If you have any questions you would like answered please don't
+                    hesitate to contact me via the form on this page.
+                </p>
+                <h3>Social media</h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
+            </div>
+            <div>          
+                <form class="contact-form">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email">
                 <label for="message" name="message">Message</label>
                 <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                <input type="submit" value="submit">
+                <button class="submit">submit</button>
             </form>
             </div>
+        </div>
         </section>   
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>     
 <script src="app.js"></script>
