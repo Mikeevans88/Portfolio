@@ -24,9 +24,11 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-left: 5%;
-	background: #11243b;
-	color: white;
+	padding-left: 0.5%;
+	background: white;
+	color: #38b6ff;
+	height: 10vh;
+	box-shadow: 0 2px 5px 0 #11243b;
 }
 nav ul {
 	display: flex;
@@ -35,13 +37,13 @@ nav ul {
 }
 
 .nav-links li {
-	padding-left: 5rem;
+	padding-left: 1rem;
 	padding-right: 1rem;
-	font-size: 1rem;
+	font-size: 1.25rem;
 }
 .nav-links a {
 	text-decoration: none;
-	color: white;
+	color: #38b6ff;
 }
 .nav-links a:hover {
 	text-decoration: underline;
@@ -67,7 +69,7 @@ nav ul {
 	font-size: 3rem;
 }
 .slider {
-	background: gold;
+	background: #38b6ff;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -91,12 +93,12 @@ nav ul {
 	font-size: 2rem;
 }
 .bio h2 {
-	color: gold;
+	color: #38b6ff;
 }
 .bio p {
 }
 .bio button {
-	background: gold;
+	background: #38b6ff;
 	color: white;
 	border: none;
 	padding: .7em .75em;
